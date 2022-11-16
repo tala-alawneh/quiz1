@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#51673AB7"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="#FBF5BC"
+        android:padding="10dp"
+        android:text="BMI Calculator"
+        android:textAlignment="center"
+        android:textColor="#9C27B0"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/edtTextWeight"
+        style="@style/editTextStyle"
+        android:layout_width="match_parent"
+        android:minHeight="48dp"
+        android:text="enter your weight in kg" />
+
+    <EditText
+        android:id="@+id/edtTextHeight"
+        style="@style/editTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="enter your height in meters" />
+
+    <Switch
+        android:id="@+id/switchMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text="Male"
+        android:textColor="#673AB7"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Calculate"
+        android:textAlignment="center"
+        android:textColor="#CEFFEB3B"
+        android:textSize="20sp"
+        android:onClick="btSave_Calc"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
